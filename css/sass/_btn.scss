@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0 2rem;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--primary);
+  cursor: pointer;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 8px rgba(0, 102, 255, 0.4);
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  svg {
+    margin-right: 0.2rem;
+  }
+}
