@@ -1,8 +1,14 @@
 .container {
   padding: 5rem 0;
+  display: flex;
+
   &__peoples {
     margin: 0 100px;
     max-width: 48rem;
     width: 100%;
+  }
+  &__statistics {
+    display: flex;
+    position: relative;
   }
 }
