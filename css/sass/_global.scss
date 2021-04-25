@@ -10,11 +10,12 @@ html {
 }
 
 body {
-  background-color: #fafafa;
-  color: #212121;
+  background-color: var(--background);
+  font-family: "Lato", sans-serif;
+  color: var(--text);
 }
 
 h1 {
   font-size: 3rem;
-  color: red;
+  font-weight: 900;
 }
