@@ -1,0 +1,31 @@
+.input {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  width: 100%;
+  background-color: var(--darken-1);
+  border-radius: 2rem;
+  transition: box-shadow 0.2s;
+  &__icon {
+    padding: 0 1rem;
+  }
+  &__element {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  input::placeholder {
+    font-size: 0.875rem;
+    color: var(--darken-3);
+    font-weight: 400;
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 1pt 1pt var(--primary);
+  }
+}
