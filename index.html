@@ -11,10 +11,35 @@
 </head>
 <body>
   <main class="container">
+    <div class="modal --visible" id="modal">
+      <div class="modal__card">
+        <h3 class="modal__card__title">Add People</h3>
+        <div class="modal__card__column">
+          <span class="modal__card__column__label">Name</span>
+          <div class="input">
+            <input type="text" class="input__element" placeholder="People name" />
+          </div>
+        </div>
+        <div class="modal__card__column">
+          <span class="modal__card__column__label">Age</span>
+          <div class="input">
+            <input type="text" class="input__element" placeholder="People age" />
+          </div>
+        </div>
+        <div class="modal__card__actions">
+          <button class="btn --outline grey" id="modal-close">
+            Cancel
+          </button>
+          <button class="btn">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
     <section class="container__peoples">
       <div class="flexbox row justify-between mb-2">
         <h1>Peoples</h1>
-        <button class="btn">
+        <button class="btn" id="modal-open">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 4.16666V15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M4.16663 10H15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
