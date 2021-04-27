@@ -20,4 +20,16 @@
   svg {
     margin-right: 0.2rem;
   }
+
+  &.--outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    box-shadow: none;
+
+    &.grey {
+      color: var(--darken-4);
+      border: 2px solid var(--darken-4);
+    }
+  }
 }
