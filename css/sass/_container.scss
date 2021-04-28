@@ -11,4 +11,15 @@
     display: flex;
     position: relative;
   }
+
+  @media only screen and (max-width: 1280px) {
+    &__statistics {
+      display: none;
+    }
+    &__peoples {
+      margin: 0 3rem;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 }
