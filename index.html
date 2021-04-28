@@ -11,30 +11,17 @@
 </head>
 <body>
   <main class="container">
-    <div class="modal --visible" id="modal">
-      <div class="modal__card">
-        <h3 class="modal__card__title">Add People</h3>
-        <div class="modal__card__column">
-          <span class="modal__card__column__label">Name</span>
-          <div class="input">
-            <input type="text" class="input__element" placeholder="People name" />
-          </div>
-        </div>
-        <div class="modal__card__column">
-          <span class="modal__card__column__label">Age</span>
-          <div class="input">
-            <input type="text" class="input__element" placeholder="People age" />
-          </div>
-        </div>
-        <div class="modal__card__actions">
-          <button class="btn --outline grey" id="modal-close">
-            Cancel
-          </button>
-          <button class="btn">
-            Save
-          </button>
-        </div>
+    <div class="modal" id="modal">
+      <div class="modal__header" id="modal-close">
+        <button class="btn-outline grey">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5" stroke="#0066FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 19L5 12L12 5" stroke="#0066FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <h3 class="modal__header__title">Register new user</h3>
       </div>
+      <div class="modal__content"></div>
     </div>
     <section class="container__peoples">
       <div class="flexbox row justify-between mb-2">
