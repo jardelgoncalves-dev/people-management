@@ -8,6 +8,7 @@
     "--darken-4": "#6E6E6E",
     "--primary": "#0066FF",
     "--primary-opacity-4": "rgba(0, 102, 255, 0.4)",
+    "--primary-opacity-1": "rgba(0, 102, 255, 0.1)",
     "--text": "#FAFAFA",
   };
   function setTheme() {
