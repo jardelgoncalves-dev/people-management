@@ -20,16 +20,28 @@
   svg {
     margin-right: 0.2rem;
   }
+}
 
-  &.--outline {
-    background-color: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
-    box-shadow: none;
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--primary-opacity-1);
+  cursor: pointer;
+  border: 2px solid var(--primary);
+  border-radius: 3rem;
+  transition: opacity 0.4s;
 
-    &.grey {
-      color: var(--darken-4);
-      border: 2px solid var(--darken-4);
-    }
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.grey {
+    color: var(--darken-4);
   }
 }
