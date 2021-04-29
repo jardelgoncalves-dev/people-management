@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 216px;
+  height: 249px;
   width: 100%;
   justify-content: center;
   background-color: var(--darken-2);
@@ -13,15 +13,16 @@
 
   &:hover {
     border: 2px solid var(--primary);
-    .card__btn-more {
+    .card__actions__btn {
       transition: opacity 0.2s;
-      opacity: 1;
-      visibility: visible;
-      z-index: 1;
+      svg {
+        stroke: var(--primary);
+      }
     }
   }
 
   &__avatar {
+    margin-top: 1rem;
     height: 4.6875rem;
     width: 4.6875rem;
     display: flex;
@@ -36,10 +37,17 @@
     }
   }
   &__name {
-    font-size: 1rem;
-    font-weight: 900;
-    color: var(--text);
     margin-top: 0.8rem;
+    a {
+      color: var(--text);
+      font-weight: 900;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      &:hover {
+        color: var(--primary);
+      }
+    }
   }
   &__charge,
   &__age {
@@ -52,6 +60,38 @@
   }
   &__age {
     font-size: 0.625rem;
+  }
+
+  &__actions {
+    position: relative;
+    width: 100%;
+    margin-top: 1.8rem;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      height: 100%;
+      width: 2px;
+      border-radius: 2px;
+      background-color: var(--darken-4);
+    }
+
+    &__btn {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      svg {
+        stroke: var(--darken-4);
+      }
+    }
   }
 }
 
