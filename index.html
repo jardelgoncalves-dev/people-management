@@ -22,32 +22,60 @@
         <h3 class="modal__header__title">Register new user</h3>
       </div>
       <div class="modal__content">
-        <div class="select-avatar" id="select-avatar">
-          <button class="select-avatar__item">
-            <img src="img/avatar-01.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-02.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-03.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-04.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-05.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-06.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-07.png" alt="Avatar" />
-          </button>
-          <button class="select-avatar__item">
-            <img src="img/avatar-08.png" alt="Avatar" />
-          </button>
-        </div>
+        <form class="form">
+          <div class="form__group">
+            <span class="form__group__label">Name</span>
+            <div class="input">
+              <input type="text" class="input__element" placeholder="People name" />
+            </div>
+          </div>
+          <div class="form__group">
+            <span class="form__group__label">Role</span>
+            <div class="input">
+              <input type="text" class="input__element" placeholder="Role" />
+            </div>
+          </div>
+          <div class="form__group">
+            <span class="form__group__label">Birthdate</span>
+            <div class="input">
+              <input type="text" class="input__element" placeholder="Birthdate" />
+            </div>
+          </div>
+          <div class="form__group">
+            <span class="form__group__label">Select an avatar</span>
+            <div class="select-avatar" id="select-avatar">
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-01.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-02.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-03.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-04.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-05.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-06.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-07.png" alt="Avatar" />
+              </button>
+              <button type="button" class="select-avatar__item">
+                <img src="img/avatar-08.png" alt="Avatar" />
+              </button>
+            </div>
+            <div class="form__group mt-1">
+              <button type="submit" class="btn">
+                Register people
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <section class="container__peoples">
