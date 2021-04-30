@@ -1,0 +1,28 @@
+.select-avatar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item {
+    margin: 0.5rem;
+    background-color: transparent;
+    border: 2px solid var(--darken-3);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      border: 2px solid var(--darken-4);
+    }
+
+    &.--active {
+      border: 2px solid var(--primary);
+    }
+
+    img {
+      width: 4rem;
+      height: auto;
+    }
+  }
+}
