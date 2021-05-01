@@ -7,10 +7,17 @@
       if (elem) {
         const elemSize = (value || "").length;
         let inputValue = value;
-        if (elemSize === 2 || elemSize === 5) inputValue = value + "/";
+        if (elemSize === 3 || elemSize === 6) {
+          const lastChar = value.slice(elemSize - 1);
+          if (lastChar !== "/") {
+            inputValue = `${value.slice(0, elemSize - 1)}/${value.slice(
+              elemSize - 1
+            )}`;
+          }
+        }
         document.getElementById("birthdate").value = String(
           inputValue || ""
-        ).replace(/^\D+/g, "");
+        ).replace(/[a-z]+/gi, "");
       }
     }
   });
