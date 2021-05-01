@@ -13,7 +13,7 @@
   <main class="container">
     <div class="modal" id="modal">
       <div class="modal__header">
-        <button class="btn-outline" id="modal-close">
+        <button class="btn-outline" id="modal-close" onclick="resetForm()">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19 12H5" stroke="#0066FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M12 19L5 12L12 5" stroke="#0066FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,7 +22,7 @@
         <h3 class="modal__header__title">Register new user</h3>
       </div>
       <div class="modal__content">
-        <form class="form">
+        <form class="form" id="form">
           <div class="form__group">
             <span class="form__group__label">Name</span>
             <div class="input">
@@ -38,7 +38,7 @@
           <div class="form__group">
             <span class="form__group__label">Birthdate</span>
             <div class="input">
-              <input type="text" class="input__element" placeholder="Birthdate" />
+              <input type="text" maxlength="10" class="input__element" id="birthdate" placeholder="Birthdate" />
             </div>
           </div>
           <div class="form__group">
