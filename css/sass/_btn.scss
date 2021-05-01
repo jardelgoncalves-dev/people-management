@@ -21,6 +21,21 @@
   svg {
     margin-right: 0.2rem;
   }
+
+  &.danger {
+    background-color: var(--danger);
+    box-shadow: 0px 0px 8px var(--danger);
+  }
+  &.--bordered {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    box-shadow: none;
+    &.--no-cta {
+      color: var(--darken-4);
+      border: 2px solid var(--darken-4);
+    }
+  }
 }
 
 .btn-outline {
