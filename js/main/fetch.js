@@ -2,7 +2,7 @@
   window.addEventListener("load", () => {
     const list = document.querySelector("#list-people");
     (() => {
-      fetch("http://localhost:3000/peoples")
+      fetch(`${URL_API}/peoples`)
         .then((res) => res.json())
         .then((data) => {
           if (list) {

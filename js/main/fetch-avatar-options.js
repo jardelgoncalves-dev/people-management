@@ -2,7 +2,7 @@
   window.addEventListener("load", () => {
     const list = document.querySelector("#select-avatar");
     (() => {
-      fetch("http://localhost:3000/avatars")
+      fetch(`${URL_API}/avatars`)
         .then((res) => res.json())
         .then((data) => {
           if (list) {
