@@ -1,0 +1,66 @@
+{
+  "peoples": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "role": "Product Design",
+      "birthdate": "03/03/1995",
+      "avatar": "/static/avatar-01.png"
+    },
+    {
+      "id": 2,
+      "name": "Joseph Doe",
+      "role": "Front-End",
+      "birthdate": "03/03/1992",
+      "avatar": "/static/avatar-02.png"
+    },
+    {
+      "id": 3,
+      "name": "Marie Doe",
+      "role": "IT Recruit",
+      "birthdate": "03/03/1993",
+      "avatar": "/static/avatar-03.png"
+    },
+    {
+      "id": 4,
+      "name": "Lania Doe",
+      "role": "Back-End Developer",
+      "birthdate": "03/03/1993",
+      "avatar": "/static/avatar-04.png"
+    }
+  ],
+  "avatars": [
+    {
+      "id": 1,
+      "image": "/static/avatar-01.png"
+    },
+    {
+      "id": 2,
+      "image": "/static/avatar-02.png"
+    },
+    {
+      "id": 3,
+      "image": "/static/avatar-03.png"
+    },
+    {
+      "id": 4,
+      "image": "/static/avatar-04.png"
+    },
+    {
+      "id": 5,
+      "image": "/static/avatar-05.png"
+    },
+    {
+      "id": 6,
+      "image": "/static/avatar-06.png"
+    },
+    {
+      "id": 7,
+      "image": "/static/avatar-07.png"
+    },
+    {
+      "id": 8,
+      "image": "/static/avatar-08.png"
+    }
+  ]
+}
