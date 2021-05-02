@@ -24,7 +24,16 @@
 npm i
 ```
 
+## Run back-end API
+
+```
+npm run api
+```
+
 ## Run in development mode
+
+before running this command, run an API first.
+If you run the frontend first, you need to check the API url to change it in the file `js/main/_constants.js` currently being configured to call the api on port 3001
 
 ```
 npm start
